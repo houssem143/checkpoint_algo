@@ -1,0 +1,21 @@
+ALGORITHM algorithm_name
+VAR
+    t:STRING;
+    count:=0 : INTEGER; 
+    word:STRING;
+    countW:integer :=1
+BEGIN
+read(t)
+FOR i FROM 0 TO t.length-1 STEP   DO
+    IF (t[i]='a' or t[i]='e' or t[i]='i'or t[i]='o' or t[i]='u' or t[i]='y') THEN
+        count:= count+1
+    END_IF
+END_FOR
+write (count) ;
+write (t.length); 
+FOR i FROM 0 TO t.length-1 STEP   DO
+    if(t[i]=' ') THEN
+    countW:=countW+1
+END_FOR
+write(countW);
+END
